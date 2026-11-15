@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 int main(){
-    char sentence[100];
+    char sentence[100], newsentence[100];
     char character;
     char *ptr;
     printf("Enter a sentence: ");
@@ -16,5 +16,8 @@ int main(){
     } else {
         printf("The character '%c' is not found\n", character);
     }
+
+    strcpy(newsentence, sentence);
+    printf("copied sentence: %s\n", newsentence);
     return 0;
 }
